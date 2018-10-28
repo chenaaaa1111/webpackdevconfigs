@@ -1,0 +1,74 @@
+html,body{
+    width: 100%;height: 100%;background: #fff;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.send{
+    position: absolute;height: 1rem;bottom: 0;
+    width: auto;left: 0.24rem;right: 0.24rem;
+}
+.send .ui-btn-primary {
+    background-color: #17BB17;
+    border-color: #17BB17;
+    color: #fff;margin-top: 0.1rem;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.day{
+    color: #999;margin-right: 0.15rem;
+}
+.message{margin-right: 0.15rem;}
+.hot{
+    height: 0.24rem;line-height: 0.24rem;padding: 0.02rem 0.1rem;
+    border-radius: 0.12rem;font-size: 0.2rem;
+    background: #F4322D;color: #FFF;position: relative;top: -0.02rem;
+}
+.top{
+    width: 100%;position: absolute;top: 0;bottom: 1rem;height: auto;
+    overflow: auto;
+}
+.top .ui-row .ui-col{
+    padding: 0.2rem 0.2rem;
+}
+div,html,body,ul,li{
+    margin: 0;padding: 0;
+}
+.navlist{
+    overflow: scroll;width: 100%;
+    height: 54px;
+    background: #fff;
+}
+.navlist::-webkit-scrollbar {
+    display: none;
+}
+.navlist::-webkit-scrollbar {
+    display: none;
+}
+ul.messageHeader{
+    background:#fff;
+    white-space: nowrap;
+    height: 53px;
+    line-height: 53px;
+    color:#666666;
+}
+ul.messageHeader li.active{
+    color: #12B7F5;
+    border-bottom: 3px #ff3333 solid;
+    font-weight: 900;
+}
+ul.messageHeader li{
+    display: inline-block;
+    text-align: center;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+
+
+
+
+

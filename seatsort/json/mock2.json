@@ -1,0 +1,59 @@
+{
+  "studentClass": 1,
+  "gradeDesc": "小学四年级",
+  "classDesc": "一班",
+  "totalStudent": 64,
+  "actualStudent": 55,
+  "studentMap": {
+    "A1": {
+      "studentId": 1,
+      "studentName":"学生1",
+      "deskNumber":"A1",
+      "status":1
+    },
+    "A2": {
+      "studentId": 2,
+      "studentName":"学生2",
+      "deskNumber":"A2",
+      "status":1
+    },
+    "B2": {
+      "studentId": 3,
+      "studentName":"学生3",
+      "deskNumber":"B2"
+    },
+    "C2": {
+      "studentId": 4,
+      "studentName":"学生4",
+      "deskNumber":"C2"
+    },
+    "D2": {
+      "studentId": 5,
+      "studentName":"学生5",
+      "deskNumber":"D2",
+      "status":1
+    },
+    "E2": {
+      "studentId": 6,
+      "studentName":"学生6",
+      "deskNumber":"E2",
+      "status":1
+    },
+    "F3": {
+      "studentId": 7,
+      "studentName":"学生7",
+      "deskNumber":"F2"
+    },
+    "H2": {
+      "studentId": 8,
+      "studentName":"学生8",
+      "deskNumber":"F8",
+      "status":1
+    },
+    "E4": {
+      "studentId": 9,
+      "studentName":"学生9",
+      "deskNumber":"F8"
+    }
+  }
+}

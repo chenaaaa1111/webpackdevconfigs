@@ -1,0 +1,60 @@
+html,body{
+    width: 100%;height: 100%;background: #fff;
+}
+.iconBox{
+    height: 1.5rem;text-align: center;padding-top: 2.5rem;
+}
+.circle{
+    width: 1.4rem;height: 1.4rem;display: inline-block;overflow: hidden;
+    border-radius: 50%;position: relative;background: #fff;border: 2px solid #ccc;
+}
+.iconBox .circle:nth-child(2){
+    border-color: rgba(255,255,255,0);background: rgba(255,255,255,0);
+}
+.circle .tips{
+    font-size: 0.3rem;line-height: 0.4rem;
+    float: left;margin-top: 0.3rem;width: 100%;
+}
+.circle img{
+    display: block;width: 100%;height: 100%;position: absolute;top: 0;
+}
+.circle img.link{
+    width: 0.8rem;height: 0.8rem;margin: 0.3rem;
+}
+.circle p{
+    font-size: 0.28rem;text-align: center;position: absolute;
+    width: 100%;height: 100%;top: 0;line-height: 1.4rem;
+}
+.loginBox{
+    margin: 0.35rem 0.24rem;font-size: 0.3rem;
+}
+.loginBox .line{
+    position: relative;height: 0.8rem;margin: 0rem 0.6rem 0.6rem;
+}
+.line .name{
+    position: absolute;top: 0;left: 0;height: 100%;
+    width: 0.9rem;line-height: 0.8rem;text-align: right;
+}
+.line .edit{
+    margin-left: 1.1rem;height: 100%;
+}
+.edit input{
+    height: 0.8rem;border: 0.01rem solid #aaa;border-radius: 0.05rem;
+    width: 100%;text-indent: 0.08rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

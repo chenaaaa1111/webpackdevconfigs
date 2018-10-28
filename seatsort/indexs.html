@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>教室选座</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/flexible.js"></script>
+</head>
+<body>
+<div id="app" v-cloak>
+   <div class="title">{{classInfo.gradeDesc}}{{classInfo.classDesc}}</div>
+    <div class="come-info">
+        <div>班级人数</div>
+        <div>{{classInfo.totalStudent}}人</div>
+        <div>实到人数</div>
+        <div>{{classInfo.actualStudent}}人</div>
+        <div>未到人数</div>
+        <div>{{classInfo.totalStudent-classInfo.actualStudent}}人</div>
+    </div>
+    <div >
+        <div class="podium">
+            <div>讲台</div>
+        </div>
+    </div>
+
+    <div  v-if="classInfo.desk_list">
+        <div v-for="(row,rowIndex) in desk_list" :key="rowIndex" :style="deskOnwidth" class="desk-con">
+            <div 
+            	:data-row="rowIndex"
+            	:data-col="index"
+                :style="columnWidth"  @click="bindClick"
+                class="desk" :class="{empty:!item || !item.studentName||item.status,even:index%2 == 1,uneven:index%2 == 0}"
+                v-for="(item,index) in row" :key="index" ref="desk"
+                @dragover='allowDrop($event)' @drop="drop($event,item,rowIndex,index)"
+            >
+                <div 
+                    :style="moveingItem && item.studentId === moveingItem.studentId ?  moveingStyle : {}"
+                    class="student" v-if="item && item.studentName" 
+                    draggable @dragstart="drag($event,item,rowIndex,index)"  
+                    @touchmove.prevent="move" @touchstart="startMove($event,item,rowIndex,index)" @touchend="endMove">
+                    {{item.studentName}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom" v-if="canmove">
+        <button class="btn complete" @click="complete">完成</button>
+        <button class="btn cance" @click="cance">取消</button>
+    </div>
+    <div class="bottom" v-show="isrelow">
+        <button class="remain" @click="gotoremain">一键提醒</button>
+    </div>
+</div>
+
+<script src="./js/vue.js"></script>
+<script src="./js/vue-resource.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html> 

@@ -1,0 +1,69 @@
+html,body{
+    width: 100%;height: 100%;background: #fff;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.head{
+    height: 0.8rem;font-size: 0.24rem;line-height: 0.8rem;padding: 0rem 0.3rem;
+}
+.edit{
+    margin: 0rem 0.24rem;border: 0.01rem solid #aaa;border-radius: 0.05rem;
+}
+.editInner{
+    height: 5rem;margin: 0.1rem
+}
+.edit textarea{
+    display: block;width: 100%;height: 100%;font-size: 0.3rem;
+    border: none;outline: none;resize: none;line-height: 0.4rem;
+}
+.uploadBox{
+    margin: 0rem 0.24rem;position: relative;height: 1rem;border-bottom: 1px solid #aaa;
+    line-height: 1.2rem;
+}
+.choose{
+    width: 0.8rem;height: 1rem;display: inline-block;
+}
+.choose img{
+    width: 0.64rem;height: 0.64rem;display: block;margin: 0 auto;
+}
+.choose p{
+    height: 0.36rem;line-height: 0.36rem;text-align: center;font-size: 0.24rem;
+}
+.kg{
+    height: 0.8rem;margin: 0rem 0.24rem;border-bottom: 0.01rem solid #aaa;
+}
+.kgTip{
+    float: left;height: 0.8rem;line-height: 0.8rem;font-size: 0.24rem;
+}
+.onOff{
+    /*width: 0.42rem;height: 0.24rem;line-height: 0.8rem;*/
+    float: right;font-size: 0.4rem;line-height: 0.8rem;
+}
+
+.send{
+    margin: 0.35rem 0.24rem 0rem;
+}
+.send .ui-btn-primary {
+    background-color: #17BB17;
+    border-color: #17BB17;
+    color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

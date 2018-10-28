@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="css/frozen.css"/>
+    <link rel="stylesheet" href="css/page9.css"/>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="font/iconfont.js"></script>
+    <script src="js/rem.js"></script>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <div class="top">
+        <!--<ul class="ui-row">-->
+            <!--<li class="ui-col ui-col-50">-->
+                <!--<button class="ui-btn-lg ui-btn-primary">张好好</button>-->
+            <!--</li>-->
+            <!--<li class="ui-col ui-col-50">-->
+                <!--<button class="ui-btn-lg ui-btn-default">张悠悠</button>-->
+            <!--</li>-->
+            <!--<li class="ui-col ui-col-50">-->
+                <!--<button class="ui-btn-lg ui-btn-default">张悠悠</button>-->
+            <!--</li>-->
+        <!--</ul>-->
+        <div class="navlist">
+            <ul class="messageHeader">
+                <li class="active">张悠悠</li><li>黎明</li><li>刘德华</li><li>张学友</li><li>周润发</li>
+            </ul>
+        </div>
+        <div class="ui-form ui-border-t">
+            <form action="">
+                <div class="ui-form-item ui-form-item-link ui-border-b">
+                    <label>
+                        <span class="day">12月31日</span><span class="message">值日生通知<span class="hot">查看回执</span></span>
+                    </label>
+                </div>
+                <div class="ui-form-item ui-form-item-link ui-border-b">
+                    <label>
+                        <span class="day">12月31日</span><span class="message">值日生通知</span>
+                    </label>
+                </div>
+                <div class="ui-form-item ui-form-item-link ui-border-b">
+                    <label>
+                        <span class="day">12月31日</span><span class="message">值日生通知<span class="hot">查看回执</span></span>
+                    </label>
+                </div>
+                <div class="ui-form-item ui-form-item-link ui-border-b">
+                    <label>
+                        <span class="day">12月31日</span><span class="message">值日生通知</span>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="send">
+        <button class="ui-btn-lg ui-btn-primary">发布通知</button>
+    </div>
+    <script>
+        $(function () {
+            $(function () {
+                $('ul.messageHeader li').click(function (e) {
+                    $(this).addClass('active').siblings().removeClass('active');
+                });
+            })
+        })
+    </script>
+</body>
+</html>
